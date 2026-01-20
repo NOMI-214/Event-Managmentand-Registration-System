@@ -1,4 +1,4 @@
-# 🎉 Event Registration System - Professional Edition
+# 🎉 Event Managment and Registration System - Professional Edition
 
 A complete, production-ready Event Management System built with **CodeIgniter 4**, **MySQL**, and **Bootstrap 5**.
 
