@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /Event-system/
+
+    # Redirect root to public folder
+    RewriteRule ^$ public/index.php [L]
+
+    # Skip rewriting for existing files and directories
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Rewrite to public/index.php with the path as additional info
+    RewriteRule ^(.*)$ public/index.php/$1 [QSA,L]
+</IfModule>
